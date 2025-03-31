@@ -1,0 +1,87 @@
+
+ body {
+   background-color: white;
+   font-family: "EB Garamond", serif;
+   letter-spacing: normal;
+   font-weight: 550;
+
+ }
+
+ nav {
+
+ }
+
+ #heading {
+   font-family: "EB Garamond", serif;
+   font-weight: 550;
+   font-size: 96pt;
+   line-height: 134.4px;
+   letter-spacing: 10px;
+ }
+
+ .description {
+   
+ }
+
+ .description > ul {
+
+ }
+
+ nav {
+   background-color: #8EAD26;
+   font-family: "EB Garamond", serif;
+   font-weight: 550;
+
+ }
+
+ nav > ul {
+   text-align: center;
+   font-family: "Fira Code", monospace;
+   font-size: 50px;
+   line-height: 150%;
+   font-weight: normal;
+   list-style-type: none;
+ }
+
+ nav > ul > li {
+
+ }
+
+nav > ul > li > a, a:visited {
+   font-color: var(--darkblue);
+   text-decoration: none;
+}
+
+
+
+ h1 {
+   font-family: "EB Garamond", serif;
+   font-weight: 550;
+   font-size: 50px;
+ }
+
+ h2 {
+
+ }
+
+ h3 {
+
+ }
+
+ strong {
+   font-family: "Fira Code", monospace;
+   color: black;
+   background-color: gray;
+
+
+ }
+
+ italic {
+
+ }
+
+ .description > a, a:visited {
+   color: var(--darkblue);
+   text-decoration: none;
+ }
+
