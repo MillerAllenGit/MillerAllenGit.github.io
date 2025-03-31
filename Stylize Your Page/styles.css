@@ -4,6 +4,7 @@
    font-family: "EB Garamond", serif;
    letter-spacing: normal;
    font-weight: 550;
+   font-size: 20pt;
 
  }
 
@@ -14,9 +15,9 @@
  #heading {
    font-family: "EB Garamond", serif;
    font-weight: 550;
-   font-size: 96pt;
+   font-size: 75pt;
    line-height: 134.4px;
-   letter-spacing: 10px;
+   letter-spacing: 8px;
  }
 
  .description {
