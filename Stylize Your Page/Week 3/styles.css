@@ -1,0 +1,174 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr 1fr auto;
+  grid-template-areas: 
+    "header header"
+    "box1 box2"
+    "box3 box4"
+    "box5 box6";
+  gap: 10px;
+  padding: 20px;
+  background-color: #0F442E;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6";
+  }
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+header {
+  grid-column: 1 / -1;
+  background-color: #0F442E;
+  color: black;
+  padding: 0rem;
+  text-align: center;
+  border: 3px solid #29C984;
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+
+}
+
+
+header img {
+  width: 250px;    
+  height: auto;
+  display: block;
+  margin: .5rem auto;
+  position: sticky;
+}
+
+/* Raiden */
+.box1 {
+
+border: 3px solid #29C984;
+}
+
+.box1 img {
+  position: relative;
+  width: 700px;
+}
+
+.box1-title {
+  
+  color: #00AAFF;
+}
+
+/* Raiden Concept Art*/
+
+.box2 {
+
+  border: 3px solid #29C984;
+  }
+  
+  .box2 img {
+    position: relative;
+    width: 327px;
+  }
+  
+  .box2-title {
+    padding: 2rem;
+    color: black;
+  }
+  
+  
+  .box2-caption {
+    
+    color: black;
+  }
+
+ 
+
+/* Olga */
+.box3 {
+
+  border: 3px solid #29C984;
+  }
+  
+  .box3 img {
+    position: relative;
+    width: 700px;
+  }
+  
+  .box3-title {
+    
+    color: red;
+  }
+
+
+  /* Olga Concept Art*/
+
+.box4 {
+
+  border: 3px solid #29C984;
+  }
+  
+  .box4 img {
+    position: relative;
+    width: 327px;
+  }
+  
+  .box4-title {
+    padding: 2rem;
+    color: black;
+  }
+  
+  
+  .box4-caption {
+    
+    color: black;
+  }
+
+
+/* Snake */
+.box5 {
+
+  border: 3px solid #29C984;
+  }
+  
+  .box5 img {
+    position: relative;
+    width: 700px;
+  }
+  
+  .box5-title {
+    
+    color: green;
+  }
+  
+  /* Snake Concept Art*/
+  
+  .box6 {
+  
+    border: 3px solid #29C984;
+    }
+    
+    .box6 img {
+      position: relative;
+      width: 327px;
+    }
+    
+    .box6-title {
+      padding: 2rem;
+      color: black;
+    }
+    
+    
+    .box6-caption {
+      
+      color: black;
+    }
