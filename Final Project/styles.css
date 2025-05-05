@@ -1,0 +1,182 @@
+/* === Grid Container === */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr 1fr auto;
+  grid-template-areas:
+    "page-header page-header"
+    "box1 box2"
+    "box3 box3"
+    "box4 box5";
+  gap: 10px;
+  padding: 20px;
+  background-color: #fefefe;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "page-header"
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5";
+  }
+}
+
+/* === Global Styles === */
+body {
+  font-family: "EB Garamond", serif;
+}
+
+img {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* === Apple Logo Header === */
+header {
+  width: 100%;
+  background: linear-gradient(to bottom, #706e6f, #e2e2e2);
+  color: black;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0.5rem 0;
+}
+
+header img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* === Title === */
+.page-header {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+/* === Box1: iPod Image & Button === */
+.box1 {
+  grid-area: box1;
+}
+
+.box1 .image-with-caption {
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.mod-button {
+  padding: 0.3rem 1rem;
+  background: linear-gradient(to bottom, white, #d4d4d4);
+  border: 0.5px solid black;
+  border-radius: 12px;
+  font-family: "Work Sans", sans-serif;
+  cursor: pointer;
+}
+
+.mod-button:hover {
+  box-shadow: 1px 1px 2px black;
+}
+
+.hidden-info {
+  display: none;
+  padding: 1rem;
+  font-family: "EB Garamond", serif;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+/* === Box2: Introduction === */
+.box2 {
+  grid-area: box2;
+}
+
+.box2 .image-with-caption {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #706e6f;
+  border-radius: 12px;
+}
+
+.box2 p {
+  font-size: 1.7rem;
+}
+
+/* === Step Boxes (box3–box8) === */
+.step-box {
+  text-align: center;
+  padding: 2cm;
+}
+
+.step-box .image-with-caption {
+  display: flex;
+  justify-content: center;
+}
+
+.box3-caption {
+  color: black;
+}
+
+.image-text-split {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-image img {
+  border-radius: 8px;
+  border: 1px solid #706e6f;
+}
+
+.right-text {
+  max-width: 400px;
+  font-family: "EB Garamond", serif;
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .image-text-split {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* === Unique Grid Area Assignments === */
+.box3 {
+  grid-area: box3;
+}
+.box4 {
+  grid-area: box4;
+}
+.box5 {
+  grid-area: box5;
+}
+.box6 {
+  grid-area: box6;
+}
+.box7 {
+  grid-area: box7;
+}
+.box8 {
+  grid-area: box8;
+}
