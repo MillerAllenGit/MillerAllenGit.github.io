@@ -1,3 +1,4 @@
+
 /* === Grid Container === */
 .container {
   display: grid;
@@ -57,6 +58,8 @@ header img {
   margin: 0 auto;
 }
 
+
+/* AI! (Chat GPT) prompt used: "Show me how to add a second header under the main sticky header."
 /* === Title === */
 .page-header {
   grid-column: 1 / -1;
@@ -65,6 +68,8 @@ header img {
   font-size: 2rem;
 }
 
+
+/* AI! (Chat GPT) prompt used: "Show me how to add a button underneath the image in box 1."
 /* === Box1: iPod Image & Button === */
 .box1 {
   grid-area: box1;
@@ -95,6 +100,7 @@ header img {
   box-shadow: 1px 1px 2px black;
 }
 
+/* AI! (Chat GPT) used prompt: "explain how you could add a feature utilizing the buttons in this way." I was given examples of different features that integrated Java with my CSS. I picked the one below."*/
 .hidden-info {
   display: none;
   padding: 1rem;
@@ -120,6 +126,7 @@ header img {
   font-size: 1.7rem;
 }
 
+/* AI! (Chat GPT) used the prompt: "Any way I can style box 3- 8 without repeating so much [code]." */
 /* === Step Boxes (box3–box8) === */
 .step-box {
   text-align: center;
@@ -161,6 +168,7 @@ header img {
   }
 }
 
+/* AI! (Chat GPT) used the prompt: "Any way I can style box 3- 8 without repeating so much [code]." */
 /* === Unique Grid Area Assignments === */
 .box3 {
   grid-area: box3;
